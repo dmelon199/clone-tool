@@ -1,0 +1,29 @@
+{
+  "name": "iQA Salesforce Child Case Clone Tool",
+  "description": "This extension will clone the child case, fill out the details, and assign it to the Project Lead.",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "action": {
+    "default_icon": "/assets/logo.png"
+  },  
+  "icons": {
+    "128": "/assets/logo.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://atgdealer.lightning.force.com/*"],
+      "js": ["/js/jquery-3.6.0.min.js", "/js/default.js"],
+      "css": ["/css/button.css"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://atgdealer.lightning.force.com/*"
+  ]
+}
