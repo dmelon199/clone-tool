@@ -1,0 +1,6 @@
+.case-cloner { position: fixed; top: -5px; left: 50%; transform: translateX(-50%); display: flex; justify-content: space-between; align-items: flex-start; z-index: 100; }
+.case-cloner a { text-decoration: none; display: flex; align-items: center; justify-content: center; color: white; transition: 300ms ease border; text-transform: uppercase; min-width: 105px; min-height: 55px; transition: 200ms ease margin; background-color: #289c5c; }
+.case-cloner a:hover { text-decoration: none; color: white; cursor: pointer; margin-top: 5px; }
+.case-cloner a span { font-size: 1.75rem; }
+#clone .emoji:before { content: "\2713"; }
+#clone .emoji.lol:before { content: "Clone this case!"; }
